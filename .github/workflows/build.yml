@@ -5,6 +5,7 @@ on:
    workflows: CI
    branches:
       - master
+      - staging
       - feature/**
    types: completed
 
