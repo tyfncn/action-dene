@@ -22,4 +22,6 @@ jobs:
           pwd
           sleep 5
           cat readme.md
-
+          echo "conclusion: ${{ github.event.workflow_run.conclusion }}"
+          echo "ref: ${{ github.ref }}"
+          echo "head_branch: ${{ github.event.workflow_run.head_branch }}"
