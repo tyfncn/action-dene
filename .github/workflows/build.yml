@@ -1,0 +1,23 @@
+name: "CI"
+on:
+  workflow_dispatch:
+  workflow_run:
+   workflows: CI
+   branches:
+      - master
+      - feature/**
+   types: completed
+
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Buildinggg
+        run: |
+          ls -hal
+          pwd
+          sleep 5
+
