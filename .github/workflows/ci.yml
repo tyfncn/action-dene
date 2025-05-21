@@ -18,4 +18,5 @@ jobs:
           ls -hal
           pwd
           sleep 5
+          cat readme.md
 
